@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    height: 300px;
+    position: relative;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+.header button{
+	width: 130px;
+	height: 42px;
+	border-radius: 10px;
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 14px;
+	outline: none;
+	margin:0px 10px;
+}
+button:hover{
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.btn{
+	border: 2px solid #373636;
+	color: #373636;
+}
+.cv{
+	background-color: #0b0b0b;
+	color: white;
+	border: none;
+}
+.model {
+	height: 280px;
+  position: absolute;
+	bottom: 0;
+	left: 85%;
+	transform:translateX(-70%);
+}
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+
+  }
+  .leftcolumn  button{
+	width: 120px;
+	height: 40px;
+	color: white;
+	opacity: none;
+	border:none;
+	font-family: calibri;
+	background-color:#262525;
+  }
+  /* Add a card effect for articles */
+  .card {
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 3%; 
+    position: absolute;
+    left: 25%;
+    width: 50%;
+  }
+  .card p{
+    text-align: justify;
+  }
+.card .model {
+  height: 280px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}  
+.card .txt{
+  margin-left: 50px;
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row{
+    position: relative;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    .card{
+        left: 0;
+        width: 100%;
+    }
+    .model {
+      height: 250px;
+      left: 92%;
+    }
+    .card .model {
+      height: 230px;
+      left: 100px;
+      top: 28px;
+    }  
+    .card .txt{
+      margin-left: 130px;
+    }
+  }
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .header {
+      padding: 2px;
+      text-align: left;
+      height: 300px;
+      width: 400px;
+      margin-left: 25px;
+      margin-top: 20px;
+    }
+    .header button{
+    margin-left: 2px;
+    width: 100px;
+    }
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+    .model {
+      height: 250px;
+      left: 88%;
+    }
+    .card{
+        left: 0;
+        width: 100%;
+    }
+    .card .model {
+      height: 230px;
+      left: 99px;
+      top: 65px;
+    }  
+    .card .txt{
+      margin-left: 125px;
+    }
+  }
+
