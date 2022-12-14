@@ -105,11 +105,11 @@ button:hover{
   height: 230px;
   position: absolute;
   bottom: 0;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 100px;
 }  
 .card .txt{
-  margin-left: 50px;
+  margin-left: 150px;
 }
   /* Clear floats after the columns */
   .row:after {
